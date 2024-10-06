@@ -1,0 +1,9 @@
+export { ReactComponent as Favicon } from "./favicon.svg";
+export { ReactComponent as Zedbrand } from "./zedbrand.svg";
+export { ReactComponent as Veefriendbrand } from "./veefriendsbrand.svg";
+export { ReactComponent as Topshotbrand } from "./topshotbrand.svg";
+export { ReactComponent as Sandboxbrand } from "./sandboxbrand.svg";
+export { ReactComponent as Raribrand } from "./raribrand.svg";
+export { ReactComponent as Punkbrand } from "./punksbrand.svg";
+export { ReactComponent as Ensbrand } from "./ensbrand.svg";
+export { ReactComponent as AnimatedLogo } from "./animatedlogo.svg";
