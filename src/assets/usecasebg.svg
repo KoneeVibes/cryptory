@@ -1,0 +1,28 @@
+<svg width="528" height="744" viewBox="0 0 528 744" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_223_75)">
+<path d="M0 20C0 8.95429 8.95431 0 20 0H508C519.046 0 528 8.95431 528 20V724C528 735.046 519.046 744 508 744H20C8.95432 744 0 735.046 0 724V20Z" fill="#010123"/>
+<g filter="url(#filter0_f_223_75)">
+<path d="M618 403L291 199.343V-40H618V403Z" fill="#080868"/>
+</g>
+<g filter="url(#filter1_f_223_75)">
+<path d="M355 126.132V32.8664V-24C355 -35.0457 363.954 -44 375 -44H543C554.046 -44 563 -35.0457 563 -24V235.353C563 250.524 546.77 260.171 533.443 252.922L381.107 170.054C365.016 161.301 355 144.45 355 126.132Z" fill="#080868"/>
+<path d="M355 126.132V32.8664V-24C355 -35.0457 363.954 -44 375 -44H543C554.046 -44 563 -35.0457 563 -24V235.353C563 250.524 546.77 260.171 533.443 252.922L381.107 170.054C365.016 161.301 355 144.45 355 126.132Z" stroke="#1A1A82"/>
+</g>
+</g>
+<path d="M0.5 20C0.5 9.23043 9.23045 0.5 20 0.5H508C518.77 0.5 527.5 9.23045 527.5 20V724C527.5 734.77 518.77 743.5 508 743.5H20C9.23046 743.5 0.5 734.77 0.5 724V20Z" stroke="#8080B7" stroke-opacity="0.33"/>
+<defs>
+<filter id="filter0_f_223_75" x="171" y="-160" width="567" height="683" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_223_75"/>
+</filter>
+<filter id="filter1_f_223_75" x="347.5" y="-51.5" width="223" height="314.382" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="3.5" result="effect1_foregroundBlur_223_75"/>
+</filter>
+<clipPath id="clip0_223_75">
+<path d="M0 20C0 8.95429 8.95431 0 20 0H508C519.046 0 528 8.95431 528 20V724C528 735.046 519.046 744 508 744H20C8.95432 744 0 735.046 0 724V20Z" fill="white"/>
+</clipPath>
+</defs>
+</svg>

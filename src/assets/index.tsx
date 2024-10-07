@@ -7,3 +7,4 @@ export { ReactComponent as Raribrand } from "./raribrand.svg";
 export { ReactComponent as Punkbrand } from "./punksbrand.svg";
 export { ReactComponent as Ensbrand } from "./ensbrand.svg";
 export { ReactComponent as AnimatedLogo } from "./animatedlogo.svg";
+export { ReactComponent as Globe } from "./globe.svg";

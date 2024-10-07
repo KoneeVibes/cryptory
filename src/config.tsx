@@ -1,4 +1,11 @@
 import { Punkbrand, Raribrand, Sandboxbrand, Topshotbrand, Veefriendbrand, Zedbrand } from "./assets";
+import utilitiestracking from "./assets/utilitytracking.svg";
+import utilitiespremium from "./assets/utilitiespremium.svg";
+import aiception from "./assets/ception.svg";
+import crosschain from "./assets/crosschain.svg";
+import cryptorypad from "./assets/cryptorypad.svg";
+import cryptorydapp from "./assets/cryptorydapp.svg";
+import cryptoryweb from "./assets/cryptoryweb.svg";
 
 export const navLinks = [
     {
@@ -66,5 +73,43 @@ export const pointers = [
     {
         title: "Web3 utiliities TVL servicing",
         count: 10000000
+    },
+];
+
+export const mainusecases = [
+    {
+        title: "Utility Tracking / Connection",
+        body: "offers a platform where web3 utilities are connected and made accessible to the millions of users in the space.",
+        thumbnail: utilitiestracking
+    },
+    {
+        title: "AI Ception",
+        body: "CRYPTORY’S AI ception provides AI toolkits solution to aid builders in developing their conceived AI related projects.",
+        thumbnail: aiception
+    },
+    {
+        title: "Cross-chain swapping",
+        body: "a reliable and a faster protocol to convert assets from one chain to another seamlessly.",
+        thumbnail: crosschain
+    },
+    {
+        title: "Cryptory.pad",
+        body: "Offers the community, funding, and support essential to turning Web3 utility concepts into fully-fledged projects.",
+        thumbnail: cryptorypad
+    },
+    {
+        title: "CRYPTORY Dapp",
+        body: "Offers a platform to list DAPPs where users can download and access the utilities.",
+        thumbnail: cryptorydapp
+    },
+    {
+        title: "Access to Utilities Premium Features at Cheaper Rate",
+        body: "Cryptory, through negotiation with our partner projects, offers access to some premium features of our partner projects.",
+        thumbnail: utilitiespremium,
+    },
+    {
+        title: "Cryptory Web Apps",
+        body: "Access all the Web3 Utilities from the web page.",
+        thumbnail: cryptoryweb
     },
 ]
