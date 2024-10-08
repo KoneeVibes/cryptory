@@ -1,4 +1,4 @@
-import { Punkbrand, Raribrand, Sandboxbrand, Topshotbrand, Veefriendbrand, Zedbrand } from "./assets";
+import { Advertising, Content, Contest, Kols, Partnerships, Punkbrand, Raribrand, Referral, Sandboxbrand, Topshotbrand, Veefriendbrand, Zedbrand } from "./assets";
 import utilitiestracking from "./assets/utilitytracking.svg";
 import utilitiespremium from "./assets/utilitiespremium.svg";
 import aiception from "./assets/ception.svg";
@@ -111,5 +111,32 @@ export const mainusecases = [
         title: "Cryptory Web Apps",
         body: "Access all the Web3 Utilities from the web page.",
         thumbnail: cryptoryweb
+    },
+];
+
+export const goToMarketStrategy = [
+    {
+        name: "Strategic Parternships",
+        icon: <Partnerships />
+    },
+    {
+        name: "Targeted Advertising",
+        icon: <Advertising />
+    },
+    {
+        name: "Referral System",
+        icon: <Referral />
+    },
+    {
+        name: "Contest and Promotions",
+        icon: <Contest />
+    },
+    {
+        name: "Content Marketing",
+        icon: <Content />
+    },
+    {
+        name: "KOLs/Influencers partnership",
+        icon: <Kols />
     },
 ]

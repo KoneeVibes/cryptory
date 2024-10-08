@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import { Navigation } from "../../components/navigation";
 import { CoreValue } from "../../containers/corevalue";
 import { GoToMarket } from "../../containers/gotomarket";
@@ -6,6 +7,8 @@ import { KeyTargets } from "../../containers/keypoints";
 import { MarqueeStack } from "../../containers/marquee";
 import { UseCases } from "../../containers/usecases";
 import { HomeWrapper } from "./styled";
+import { Security } from "../../containers/security";
+import { Tokenomics } from "../../containers/tokenomics";
 
 export const Home = () => {
     return (
@@ -22,6 +25,13 @@ export const Home = () => {
             <CoreValue />
             <UseCases />
             <GoToMarket />
+            <Box
+                component={"div"}
+                className="security-and-tokenomics"
+            >
+                <Security />
+                <Tokenomics />
+            </Box>
         </HomeWrapper>
     )
 }
