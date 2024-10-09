@@ -9,6 +9,8 @@ import { UseCases } from "../../containers/usecases";
 import { HomeWrapper } from "./styled";
 import { Security } from "../../containers/security";
 import { Tokenomics } from "../../containers/tokenomics";
+import { Roadmap } from "../../containers/roadmap";
+import { Team } from "../../containers/team";
 
 export const Home = () => {
     return (
@@ -32,6 +34,8 @@ export const Home = () => {
                 <Security />
                 <Tokenomics />
             </Box>
+            <Roadmap />
+            <Team />
         </HomeWrapper>
     )
 }

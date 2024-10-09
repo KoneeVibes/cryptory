@@ -139,4 +139,64 @@ export const goToMarketStrategy = [
         name: "KOLs/Influencers partnership",
         icon: <Kols />
     },
+];
+
+export const tokenomics = [
+    {
+        title: "Token Name",
+        value: "$CRYPT"
+    },
+    {
+        title: "Blockchain Platform",
+        value: "Ethereum"
+    },
+    {
+        title: "Total Supply",
+        value: "10,000,000 (10 Million)"
+    },
+];
+
+export const tokenAllocation = [
+    {
+        title: "Liquidity Pool",
+        value: "6,400,000 $CRYPT(64%)"
+    },
+    {
+        title: "Centralized Exchange",
+        value: "1,000,000 $CRYPT(10%)"
+    },
+    {
+        title: "RevShare/Staking/Rewards",
+        value: "1,200,000 $CRYPT(12%)"
+    },
+    {
+        title: "Marketing/User Acquisition",
+        value: "900,000 $CRYPT(12%)"
+    },
+    {
+        title: "Team, Partners, Advisors",
+        value: "500,000 $CRYPT(5%)"
+    },
+    {
+        title: "Marketing/User Acquisition",
+        value: "900,000 $CRYPT(12%)"
+    },
+];
+
+export const tokenTaxes = [
+    {
+        title: "5% - buys & sell",
+    },
+    {
+        title: "1% - Marketing and User Acquisition",
+        value: "A more focused approach combining marketing efforts with strategies specifically aimed at acquiring new users, thus enhancing community growth and engagement."
+    },
+    {
+        title: "1% - Team",
+        value: "This allocation ensures that we can attract, retain, and adequately compensate top talent, essential for our long- term success."
+    },
+    {
+        title: "2% - Ecosystem",
+        value: "This is a multi- faceted allocation that includes: a.) RevShare: Continuing our commitment to sharing our success with our community. b.) Buybacks: Tokens bought back are burnt forever."
+    }
 ]
