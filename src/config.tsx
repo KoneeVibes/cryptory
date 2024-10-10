@@ -1,4 +1,4 @@
-import { Advertising, Content, Contest, Kols, Partnerships, Punkbrand, Raribrand, Referral, Sandboxbrand, Topshotbrand, Veefriendbrand, Zedbrand } from "./assets";
+import { Advertising, Content, Contest, Dannyo, Kols, Partnerships, Punkbrand, Raribrand, Referral, Rio, Sandboxbrand, Ser, Topshotbrand, Veefriendbrand, Zedbrand } from "./assets";
 import utilitiestracking from "./assets/utilitytracking.svg";
 import utilitiespremium from "./assets/utilitiespremium.svg";
 import aiception from "./assets/ception.svg";
@@ -199,4 +199,46 @@ export const tokenTaxes = [
         title: "2% - Ecosystem",
         value: "This is a multi- faceted allocation that includes: a.) RevShare: Continuing our commitment to sharing our success with our community. b.) Buybacks: Tokens bought back are burnt forever."
     }
-]
+];
+
+export const roadmap = [
+    {
+        subtitle: "PHASE1",
+        title: "Laying the Groundwork",
+        body: "This foundational phase marks the genesis of Cryptory, focusing on development, team building, and early community formation. Key Objectives: Solidify the core architecture and design of the utility marketplace, Build a skilled development team with expertise in blockchain and web3 utilities. Initiate social media presence and begin cultivating an early adopter community."
+    },
+    {
+        subtitle: "PHASE2",
+        title: "Building Core Functionality and Securing Funding",
+        body: "Building Core Functionality and Securing Funding. The focus shifts to developing essential platform features and successfully raising capital to fuel project growth. Key Objectives: Complete Platform interface and secure partnerships with utility projects. Design and finalize the tokenomics model for the project's native token."
+    },
+    {
+        subtitle: "PHASE3",
+        title: "Launch and Rapid Expansion",
+        body: "This pivotal quarter sees the official launch of Cryptory and a period of accelerated feature development. Key Objectives: Public launch of the Cryptory platform with initial onboarding of the first 100 utilities. Integrate the cross chain swapping feature. Begin the process of securing listings on prominent centralized exchanges (CEXs)."
+    },
+    {
+        subtitle: "PHASE4",
+        title: "Refinement and Strategic Growth",
+        body: "With a live platform, emphasis shifts towards polishing user experience, establishing partnerships, and planning further expansion. Key Objectives: Enhance UI/UX based on early user feedback, ensuring seamless interaction. Initiate partnerships with data providers and analytics tools to enrich the platform. Research and develop additional complementary products and services for future rollout."
+    },
+];
+
+export const team = [
+    {
+        icon: <Dannyo />,
+        title: "Dannyo",
+        body: "Dedicated community and social media manager, adept at fostering online connections and growing vibrant communities for the last 8 years."
+    },
+    {
+        icon: <Rio />,
+        title: "Rio",
+        body: "Digital Marketer and Content Creator that  seamlessly blends visions into workable actions. With a keen eye for trends and a strategic mindset his aim is to best communicate our vision and goals."
+    },
+    {
+        icon: <Ser />,
+        title: "Ser PT",
+        body: "The driving force behind XCEPTION, a leader who epitomizes intelligence and forward thinking. As the helm of our dynamic company, he is not just a CEO; he’s a strategic architect with a colossal vision for the future."
+    },
+];
+

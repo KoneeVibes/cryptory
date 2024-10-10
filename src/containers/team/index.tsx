@@ -1,7 +1,10 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Card, Typography, useMediaQuery } from "@mui/material";
 import { TeamWrapper } from "./styled";
+import { Carousel } from "react-responsive-carousel";
+import { team } from "../../config";
 
 export const Team = () => {
+    const matches = useMediaQuery('(min-width:1024px)');
     return (
         <TeamWrapper>
             <Box
@@ -27,6 +30,59 @@ export const Team = () => {
                 >
                     OUR TEAM
                 </Typography>
+            </Box>
+            <Box
+                className="carousel-box"
+            >
+                <Carousel
+                    autoPlay={true}
+                    autoFocus={true}
+                    infiniteLoop={true}
+                    interval={2000}
+                    emulateTouch={true}
+                    showIndicators={false}
+                    showThumbs={false}
+                    showArrows={false}
+                    showStatus={false}
+                    centerMode={true}
+                    centerSlidePercentage={matches ? 40 : 80}
+                >
+                    {team.map((member, index) => {
+                        return (
+                            <Card
+                                key={index}
+                                className="team-card"
+                            >
+                                {member.icon}
+                                <Typography
+                                    variant="subtitle1"
+                                    fontFamily={"Gilroy"}
+                                    fontWeight={500}
+                                    fontSize={{ mobile: 28, laptop: 42 }}
+                                    lineHeight={"normal"}
+                                    whiteSpace={"normal"}
+                                    color="#FFFFFF"
+                                    textAlign={"left"}
+                                >
+                                    {member.title}
+                                </Typography>
+                                <Typography
+                                    variant="h3"
+                                    fontFamily={"Gilroy"}
+                                    fontWeight={500}
+                                    fontSize={{ mobile: 19 }}
+                                    lineHeight={"normal"}
+                                    whiteSpace={"normal"}
+                                    color="#FFFFFF"
+                                    textAlign={"left"}
+                                    marginBlock={"0.5rem"}
+                                >
+                                    {member.body}
+                                </Typography>
+                            </Card>
+                        )
+                    })}
+                </Carousel>
             </Box>
         </TeamWrapper>
     )

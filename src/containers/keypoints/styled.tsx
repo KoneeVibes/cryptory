@@ -11,8 +11,7 @@ export const KeyPointsWrapper = styled(Grid2)(({ theme }) => {
         top: openMenu ? "var(--mobile-nav-height)" : "0",
         "& .key-point-card": {
             padding: "var(--basic-padding)",
-            background: "linear-gradient(to right, #0201A7 29%, #010123 100%)",
-            // background: "transparent",
+            background: "#09093F",
             borderRadius: 0,
             height: "100%",
         },

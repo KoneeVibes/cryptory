@@ -17,3 +17,6 @@ export { ReactComponent as Referral } from "./referral.svg";
 export { ReactComponent as AssureDefi } from "./assuredefi.svg";
 export { ReactComponent as BlockSafu } from "./blocksafu.svg";
 export { ReactComponent as SPCert } from "./sp.svg";
+export { ReactComponent as Rio } from "./rio.svg";
+export { ReactComponent as Dannyo } from "./dannyo.svg";
+export { ReactComponent as Ser } from "./ser.svg";

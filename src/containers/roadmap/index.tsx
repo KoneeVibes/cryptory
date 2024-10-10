@@ -1,8 +1,11 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Card, Typography, useMediaQuery } from "@mui/material";
 import { RoadmapWrapper } from "./styled";
-import Marquee from "react-fast-marquee";
+import { roadmap } from "../../config";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export const Roadmap = () => {
+    const matches = useMediaQuery('(min-width:1024px)');
     return (
         <RoadmapWrapper>
             <Box
@@ -41,18 +44,69 @@ export const Roadmap = () => {
                     Our plans and key milestones for the next 5 phases of Cryptory
                 </Typography>
             </Box>
-            <Box>
-                <Marquee
-                    autoFill={true}
+            <Box
+                className="carousel-box"
+            >
+                <Carousel
+                    autoPlay={true}
+                    autoFocus={true}
+                    infiniteLoop={true}
+                    interval={2000}
+                    emulateTouch={true}
+                    showIndicators={false}
+                    showThumbs={false}
+                    showArrows={false}
+                    showStatus={false}
+                    centerMode={true}
+                    centerSlidePercentage={matches ? 40 : 80}
                 >
-                    {/* {brands.map((brand, index) => {
+                    {roadmap.map((milestone, index) => {
                         return (
-                            <Fragment key={index}>
-                                {brand.icon}
-                            </Fragment>
+                            <Card
+                                key={index}
+                                className="roadmap-card"
+                            >
+                                <Typography
+                                    variant="subtitle1"
+                                    fontFamily={"Gilroy"}
+                                    fontWeight={500}
+                                    fontSize={{ mobile: 19 }}
+                                    lineHeight={"normal"}
+                                    whiteSpace={"normal"}
+                                    color="rgba(48, 108, 254, 0.96)"
+                                    textAlign={"left"}
+                                >
+                                    {milestone.subtitle}
+                                </Typography>
+                                <Typography
+                                    variant="h3"
+                                    fontFamily={"Gilroy"}
+                                    fontWeight={500}
+                                    fontSize={{ mobile: 19 }}
+                                    lineHeight={"normal"}
+                                    whiteSpace={"normal"}
+                                    color="#FFFFFF"
+                                    textAlign={"left"}
+                                    marginBlock={"1rem"}
+                                >
+                                    {milestone.title}
+                                </Typography>
+                                <Typography
+                                    variant="body1"
+                                    fontFamily={"Gilroy"}
+                                    fontWeight={500}
+                                    fontSize={{ mobile: 16 }}
+                                    whiteSpace={"normal"}
+                                    color="#FFFFFF"
+                                    lineHeight={1.6}
+                                    textAlign={"left"}
+                                >
+                                    {milestone.body}
+                                </Typography>
+                            </Card>
                         )
-                    })} */}
-                </Marquee>
+                    })}
+                </Carousel>
             </Box>
         </RoadmapWrapper>
     )

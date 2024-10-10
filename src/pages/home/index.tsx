@@ -11,6 +11,7 @@ import { Security } from "../../containers/security";
 import { Tokenomics } from "../../containers/tokenomics";
 import { Roadmap } from "../../containers/roadmap";
 import { Team } from "../../containers/team";
+import { Faq } from "../../containers/faq";
 
 export const Home = () => {
     return (
@@ -36,6 +37,7 @@ export const Home = () => {
             </Box>
             <Roadmap />
             <Team />
+            <Faq />
         </HomeWrapper>
     )
 }
