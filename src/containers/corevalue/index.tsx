@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { CoreValueWrapper } from "./styled";
-import { AnimatedLogo } from "../../assets";
+import AnimatedLogo from "../../assets/animatedlogo.gif";
 import { BaseButton } from "../../components/button/styled";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
@@ -58,7 +58,7 @@ export const CoreValue = () => {
                 component={"div"}
                 className="animation-area"
             >
-                <AnimatedLogo />
+                <img src={AnimatedLogo} alt="Animated Logo" />
             </Box>
         </CoreValueWrapper>
     )

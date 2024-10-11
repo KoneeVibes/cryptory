@@ -15,7 +15,7 @@ export const CoreValueWrapper = styled(Stack)(({ theme }) => {
         padding: "calc(var(--basic-padding) * 1)",
         margin: "calc(var(--basic-padding) * 1)",
         gap: "var(--flex-gap)",
-        border: "1px solid #5D44DB",
+        border: "1px solid #5D44DB50",
         position: "relative",
         top: openMenu ? "var(--mobile-nav-height)" : "0",
         "& .text-area": {
@@ -25,7 +25,7 @@ export const CoreValueWrapper = styled(Stack)(({ theme }) => {
         "& .animation-area": {
             flex: 1,
             overflow: "hidden",
-            "& svg": {
+            "& img": {
                 width: "100%",
                 [theme.breakpoints.down("miniTablet")]: {
                     height: "auto",

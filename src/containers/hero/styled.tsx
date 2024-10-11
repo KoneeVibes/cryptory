@@ -32,6 +32,24 @@ export const HeroWrapper = styled(Box)(({ theme }) => {
                 paddingBottom: "0.5rem",
             }
         },
+        "& .pyramid-icon": {
+            position: "absolute",
+            top: "70%",
+            transform: "translateY(-70%)",
+            left: 0,
+            [theme.breakpoints.down("tablet")]: {
+                display: "none",
+            }
+        },
+        "& .star-icon": {
+            position: "absolute",
+            top: "70%",
+            transform: "translateY(-70%)",
+            right: 0,
+            [theme.breakpoints.down("tablet")]: {
+                display: "none",
+            }
+        },
         [theme.breakpoints.up("tablet")]: {
             padding: "calc(var(--basic-padding) * 2)",
         }

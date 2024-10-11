@@ -20,7 +20,7 @@ export const UseCasesWrapper = styled(Box)(({ theme }) => {
             backgroundPosition: "top center",
             minHeight: "26.25rem",
             padding: "var(--basic-padding)",
-            border: "1px solid #5D44DB",
+            border: "1px solid #5D44DB50",
         },
         "& .use-case-title": {
             borderBottom: "1px solid transparent",

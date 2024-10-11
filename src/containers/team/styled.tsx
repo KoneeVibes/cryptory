@@ -26,7 +26,7 @@ export const TeamWrapper = styled(Box)(({ theme }) => {
             height: "100%",
             borderRadius: "10px",
             backgroundColor: "transparent",
-            border: "1px solid #81A5FF",
+            border: "1px solid #81A5FF50",
             "& svg": {
                 display: "block",
                 marginRight: "auto",

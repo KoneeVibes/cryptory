@@ -1,6 +1,7 @@
 import { Box, Stack, Typography } from "@mui/material";
 import { HeroWrapper } from "./styled";
 import { BaseButton } from "../../components/button/styled";
+import { Pyramid, Star } from "../../assets";
 
 export const Hero = () => {
     return (
@@ -109,6 +110,8 @@ export const Hero = () => {
                     </Typography>
                 </BaseButton>
             </Stack>
+            <Pyramid className="pyramid-icon"/>
+            <Star className="star-icon"/>
         </HeroWrapper>
     )
 }

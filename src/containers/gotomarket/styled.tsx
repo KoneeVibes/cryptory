@@ -26,7 +26,7 @@ export const GoToMarketWrapper = styled(Box)(({ theme }) => {
             backgroundPosition: "top center",
             overflow: "hidden",
             padding: "calc(var(--basic-padding) * 1)",
-            border: "1px solid #5D44DB",
+            border: "1px solid #5D44DB50",
             margin: "calc(var(--basic-margin) * 1)",
             [theme.breakpoints.up("tablet")]: {
                 margin: "var(--basic-margin) calc(var(--basic-margin) * 2) calc(var(--basic-margin) * 2)",
@@ -52,7 +52,7 @@ export const GoToMarketWrapper = styled(Box)(({ theme }) => {
         },
         "& .bordered-box": {
             border: "1px solid transparent",
-            borderImage: "linear-gradient(to right, #AAC3FF 0%, #81A5FF 10%) 1",
+            borderImage: "linear-gradient(to right, #AAC3FF50 0%, #81A5FF50 10%) 1",
             padding: "calc(var(--basic-padding) * 2)",
         },
         "& .foot-note": {
