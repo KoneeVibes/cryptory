@@ -6,6 +6,7 @@ import crosschain from "./assets/crosschain.svg";
 import cryptorypad from "./assets/cryptorypad.svg";
 import cryptorydapp from "./assets/cryptorydapp.svg";
 import cryptoryweb from "./assets/cryptoryweb.svg";
+import { GitHub, Telegram, Twitter, YouTube } from "@mui/icons-material";
 
 export const navLinks = [
     {
@@ -242,3 +243,83 @@ export const team = [
     },
 ];
 
+export const qanda = [
+    {
+        question: "What can website AI do?",
+        answer: "Website AI is a cutting-edge tool that assists in generating website content, designs, and layouts using artificial intelligence. It streamlines the website creation process, making it efficient and user-friendly."
+    },
+    {
+        question: "How do I access Cryptory?",
+        answer: "Website AI is a cutting-edge tool that assists in generating website content, designs, and layouts using artificial intelligence. It streamlines the website creation process, making it efficient and user-friendly."
+    },
+    {
+        question: "Is Cryptoryfree to use?",
+        answer: "Website AI is a cutting-edge tool that assists in generating website content, designs, and layouts using artificial intelligence. It streamlines the website creation process, making it efficient and user-friendly."
+    },
+    {
+        question: "How does the AI generate content?",
+        answer: "Website AI is a cutting-edge tool that assists in generating website content, designs, and layouts using artificial intelligence. It streamlines the website creation process, making it efficient and user-friendly."
+    },
+    {
+        question: "Can I customize the AI-generated content?",
+        answer: "Website AI is a cutting-edge tool that assists in generating website content, designs, and layouts using artificial intelligence. It streamlines the website creation process, making it efficient and user-friendly."
+    },
+    {
+        question: "Is my data safe with cryptory?",
+        answer: "Website AI is a cutting-edge tool that assists in generating website content, designs, and layouts using artificial intelligence. It streamlines the website creation process, making it efficient and user-friendly."
+    },
+];
+
+export const footerLinks = {
+    quickLinks: [
+        {
+            name: "About Us",
+            url: "/#",
+        },
+        {
+            name: "Features",
+            url: "/#",
+        },
+        {
+            name: "KYC",
+            url: "/#",
+        },
+        {
+            name: "Token",
+            url: "/#",
+        },
+    ],
+    support: [
+        {
+            name: "GitBook",
+            url: "/#",
+        },
+        {
+            name: "Bot",
+            url: "/#",
+        },
+        {
+            name: "FAQs",
+            url: "/#",
+        },
+    ],
+};
+
+export const socialMediaIcons = [
+    {
+        icon: <Telegram />,
+        url: "/#"
+    },
+    {
+        icon: <Twitter />,
+        url: "/#"
+    },
+    {
+        icon: <GitHub />,
+        url: "/#"
+    },
+    {
+        icon: <YouTube />,
+        url: "/#"
+    },
+]

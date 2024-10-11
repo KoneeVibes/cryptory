@@ -1,7 +1,37 @@
-import { Box, Typography } from "@mui/material";
+import { useEffect } from "react";
+import { Box, IconButton, Stack, Typography } from "@mui/material";
 import { FaqWrapper } from "./styled";
+import { qanda } from "../../config";
+import RemoveOutlinedIcon from '@mui/icons-material/RemoveOutlined';
+import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 
 export const Faq = () => {
+    useEffect(() => {
+        const toggleButtons = Array.from(document.getElementsByClassName("toggle-button")) as HTMLElement[];
+        const toggleOpenButtons = Array.from(document.getElementsByClassName("toggle-open-icon")) as HTMLElement[];
+        const toggleCloseButtons = Array.from(document.getElementsByClassName("toggle-close-icon")) as HTMLElement[];
+        const answers = Array.from(document.getElementsByClassName("faq-answer-box")) as HTMLElement[];
+        //default to display the first answer
+        answers[0].classList.add("show");
+        toggleOpenButtons[0].classList.add("show");
+        toggleCloseButtons[0].classList.add("hide");
+        toggleButtons.forEach((toggleButton, i) => {
+            toggleButton.addEventListener("click", function () {
+                answers.forEach((answer) => {
+                    answer.classList.remove("show");
+                });
+                toggleOpenButtons.forEach((openButton) => {
+                    openButton.classList.remove("show");
+                });
+                toggleCloseButtons.forEach((closeButton) => {
+                    closeButton.classList.remove("hide");
+                })
+                answers[i].classList.add("show");
+                toggleOpenButtons[i].classList.add("show");
+                toggleCloseButtons[i].classList.add("hide");
+            })
+        });
+    }, []);
     return (
         <FaqWrapper>
             <Box
@@ -54,6 +84,57 @@ export const Faq = () => {
                 >
                     Got questions about Cryptory? We've got answers. Dive into our FAQ section to learn more.
                 </Typography>
+            </Box>
+            <Box
+                component={"div"}
+                className="faq-qanda"
+            >
+                {qanda.map((entry, index) => {
+                    return (
+                        <Box
+                            key={index}
+                        >
+                            <Stack
+                                direction={{ mobile: "row" }}
+                                className="faq-question-stack"
+                            >
+                                <Typography
+                                    variant="subtitle1"
+                                    fontFamily={"Gilroy"}
+                                    fontWeight={500}
+                                    fontSize={{ mobile: 19 }}
+                                    lineHeight={"normal"}
+                                    whiteSpace={"normal"}
+                                    color="#306CFE"
+                                >
+                                    {entry.question}
+                                </Typography>
+                                <IconButton
+                                    className="toggle-button"
+                                >
+                                    <RemoveOutlinedIcon className="toggle-open-icon" />
+                                    <AddOutlinedIcon className="toggle-close-icon" />
+                                </IconButton>
+                            </Stack>
+                            <Box
+                                component={"div"}
+                                className="faq-answer-box"
+                            >
+                                <Typography
+                                    variant="body1"
+                                    fontFamily={"Gilroy"}
+                                    fontWeight={500}
+                                    fontSize={{ mobile: 16 }}
+                                    lineHeight={"normal"}
+                                    whiteSpace={"normal"}
+                                    color="#FFFFFF99"
+                                >
+                                    {entry.answer}
+                                </Typography>
+                            </Box>
+                        </Box>
+                    )
+                })}
             </Box>
         </FaqWrapper>
     )

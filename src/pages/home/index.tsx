@@ -12,6 +12,7 @@ import { Tokenomics } from "../../containers/tokenomics";
 import { Roadmap } from "../../containers/roadmap";
 import { Team } from "../../containers/team";
 import { Faq } from "../../containers/faq";
+import { Footer } from "../../containers/footer";
 
 export const Home = () => {
     return (
@@ -38,6 +39,7 @@ export const Home = () => {
             <Roadmap />
             <Team />
             <Faq />
+            <Footer />
         </HomeWrapper>
     )
 }

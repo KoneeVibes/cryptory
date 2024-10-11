@@ -23,11 +23,17 @@ export const TeamWrapper = styled(Box)(({ theme }) => {
         },
         "& .team-card": {
             padding: "var(--basic-padding)",
-            minHeight: "6rem",
             height: "100%",
             borderRadius: "10px",
             backgroundColor: "transparent",
             border: "1px solid #81A5FF",
+            "& svg": {
+                display: "block",
+                marginRight: "auto",
+            },
+            [theme.breakpoints.up("laptop")]: {
+                minHeight: "38.75rem",
+            }
         },
         "& .slider": {
             gap: "var(--flex-gap)",

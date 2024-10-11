@@ -63,6 +63,7 @@ export const Team = () => {
                                     whiteSpace={"normal"}
                                     color="#FFFFFF"
                                     textAlign={"left"}
+                                    marginBlock={"1rem"}
                                 >
                                     {member.title}
                                 </Typography>
@@ -75,7 +76,7 @@ export const Team = () => {
                                     whiteSpace={"normal"}
                                     color="#FFFFFF"
                                     textAlign={"left"}
-                                    marginBlock={"0.5rem"}
+                                    marginBlock={"1rem"}
                                 >
                                     {member.body}
                                 </Typography>
