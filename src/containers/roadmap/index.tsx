@@ -3,18 +3,26 @@ import { RoadmapWrapper } from "./styled";
 import { roadmap } from "../../config";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { motion } from "framer-motion";
+import { container, item } from "../../configs/verticalSlideIn";
 
 export const Roadmap = () => {
     const matches = useMediaQuery('(min-width:1024px)');
     return (
-        <RoadmapWrapper>
+        <RoadmapWrapper
+            id="roadmap"
+        >
             <Box
-                component={"div"}
+                component={motion.div}
+                variants={container}
+                initial="hidden"
+                whileInView="show"
                 width={{ miniTablet: "70%", tablet: "50%", laptop: "40%" }}
                 className="roadmap-title"
             >
                 <Typography
-                    variant="h2"
+                    component={motion.h2}
+                    variants={item}
                     fontFamily={"Gilroy"}
                     fontWeight={800}
                     fontSize={{ mobile: 30, tablet: 40, desktop: 50 }}
@@ -32,7 +40,8 @@ export const Roadmap = () => {
                     ROADMAP
                 </Typography>
                 <Typography
-                    variant="body1"
+                    component={motion.p}
+                    variants={item}
                     fontFamily={"Dm Sans"}
                     fontWeight={400}
                     fontSize={{ mobile: 18 }}
@@ -46,6 +55,10 @@ export const Roadmap = () => {
             </Box>
             <Box
                 className="carousel-box"
+                component={motion.div}
+                variants={container}
+                initial="hidden"
+                whileInView="show"
             >
                 <Carousel
                     autoPlay={true}

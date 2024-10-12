@@ -22,3 +22,4 @@ export { ReactComponent as Ser } from "./ser.svg";
 export { ReactComponent as Star } from "./emojistar.svg";
 export { ReactComponent as Pyramid } from "./pyramid.svg";
 export { ReactComponent as Helix } from "./helix.svg";
+export { ReactComponent as CubeHelix } from "./cubehelix.svg";

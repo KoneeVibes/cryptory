@@ -25,6 +25,7 @@ export const NavigationWrapper = styled(Stack)(({ theme }) => {
             "& svg": {
                 width: "100%",
                 height: "auto",
+                cursor: "pointer",
             }
         },
         "& .hamburger": {
@@ -48,6 +49,9 @@ export const NavigationWrapper = styled(Stack)(({ theme }) => {
             padding: "0 var(--basic-padding) var(--basic-padding)",
             overflow: "hidden",
             borderBottom: openMenu ? "1px solid #FFFFFF1A" : "none",
+        },
+        "& a": {
+            textDecoration: "none",
         },
         [theme.breakpoints.up("tablet")]: {
             padding: "var(--basic-padding) calc(var(--basic-padding) * 2)",

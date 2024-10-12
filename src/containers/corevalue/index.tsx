@@ -3,16 +3,22 @@ import { CoreValueWrapper } from "./styled";
 import AnimatedLogo from "../../assets/animatedlogo.gif";
 import { BaseButton } from "../../components/button/styled";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import { motion } from "framer-motion";
+import { leftChild, leftParent, rightChild, rightParent } from "../../configs/horizontalSlideIn";
 
 export const CoreValue = () => {
     return (
         <CoreValueWrapper>
             <Box
-                component={"div"}
+                component={motion.div}
+                variants={leftParent}
+                initial={"hidden"}
+                whileInView={"show"}
                 className="text-area"
             >
                 <Typography
-                    variant="h2"
+                    component={motion.h2}
+                    variants={leftChild}
                     fontFamily={"Gilroy"}
                     fontWeight={600}
                     fontSize={22}
@@ -23,7 +29,8 @@ export const CoreValue = () => {
                     Core Values
                 </Typography>
                 <Typography
-                    variant="body1"
+                    component={motion.p}
+                    variants={leftChild}
                     fontFamily={"Manrope"}
                     fontWeight={400}
                     fontSize={16}
@@ -37,6 +44,8 @@ export const CoreValue = () => {
                     radius="2rem"
                     background="#010123"
                     variant="contained"
+                    component={motion.button}
+                    variants={leftChild}
                     border="1px solid #5D44DB"
                     endIcon={<ArrowForwardIosIcon />}
                     sx={{ marginBlockStart: "var(--basic-margin)" }}
@@ -55,10 +64,17 @@ export const CoreValue = () => {
                 </BaseButton>
             </Box>
             <Box
-                component={"div"}
                 className="animation-area"
+                component={motion.div}
+                variants={rightParent}
+                initial={"hidden"}
+                whileInView={"show"}
             >
-                <img src={AnimatedLogo} alt="Animated Logo" />
+                <motion.img
+                    src={AnimatedLogo}
+                    alt="Animated Logo"
+                    variants={rightChild}
+                />
             </Box>
         </CoreValueWrapper>
     )

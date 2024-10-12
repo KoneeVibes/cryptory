@@ -16,7 +16,6 @@ export const HeroWrapper = styled(Box)(({ theme }) => {
         overflow: "hidden",
         "& .subtitle-box": {
             border: "1px solid #5D44DB",
-            // borderImage: "linear-gradient(to right, #EFEFEF 0%, #5D44DB 100%) 1",
             borderRadius: "20px",
             padding: "0.5rem",
         },
@@ -34,18 +33,20 @@ export const HeroWrapper = styled(Box)(({ theme }) => {
         },
         "& .pyramid-icon": {
             position: "absolute",
-            top: "70%",
-            transform: "translateY(-70%)",
+            top: "30%",
             left: 0,
+            transformStyle: "preserve-3d",
+            animation: "spin 5s linear infinite",
             [theme.breakpoints.down("tablet")]: {
                 display: "none",
             }
         },
         "& .star-icon": {
             position: "absolute",
-            top: "70%",
-            transform: "translateY(-70%)",
+            top: "20%",
             right: 0,
+            transformStyle: "preserve-3d",
+            animation: "spin 5s linear infinite",
             [theme.breakpoints.down("tablet")]: {
                 display: "none",
             }

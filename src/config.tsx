@@ -11,23 +11,23 @@ import { GitHub, Telegram, Twitter, YouTube } from "@mui/icons-material";
 export const navLinks = [
     {
         name: "Main use cases",
-        url: "#"
+        url: "/#usecases"
     },
     {
         name: "Road Map",
-        url: "#"
+        url: "/#roadmap"
     },
     {
         name: "GT Marketing Strategy",
-        url: "#"
+        url: "/#strategy"
     },
     {
         name: "Tokenomics",
-        url: "#"
+        url: "/#tokenomics"
     },
     {
         name: "Other",
-        url: "#"
+        url: "/#footer"
     },
 ];
 

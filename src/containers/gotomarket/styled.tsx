@@ -47,7 +47,9 @@ export const GoToMarketWrapper = styled(Box)(({ theme }) => {
             overflow: "hidden",
             "& svg": {
                 width: "100%",
-                height: "auto"
+                height: "auto",
+                transformStyle: "preserve-3d",
+                animation: "spin 5s linear infinite",
             }
         },
         "& .bordered-box": {

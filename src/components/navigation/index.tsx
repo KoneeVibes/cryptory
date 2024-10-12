@@ -1,38 +1,51 @@
+import { HashLink } from "react-router-hash-link";
 import { Box, Stack, Typography } from "@mui/material";
 import { NavigationWrapper } from "./styled";
 import { Favicon } from "../../assets";
 import { navLinks } from "../../config";
 import { BaseButton } from "../button/styled";
 import { MenuButton } from "../button/menu";
+import { useNavigate } from "react-router-dom";
 
 export const Navigation = () => {
+    const navigate = useNavigate();
+    const handleLogoClick = () => {
+        navigate("/");
+    };
     return (
         <NavigationWrapper>
             <Box
                 component={"div"}
                 className="favicon-box"
             >
-                <Favicon />
+                <Favicon
+                    onClick={handleLogoClick}
+                />
             </Box>
             <Stack
                 className="nav-links"
             >
                 {navLinks.map((navLink, index) => {
                     return (
-                        <Typography
+                        <HashLink
                             key={index}
-                            variant="subtitle1"
-                            fontFamily={"Manrope"}
-                            fontWeight={500}
-                            fontSize={15}
-                            lineHeight={"normal"}
-                            color={"#FFFFFF"}
-                            sx={{
-                                cursor: "pointer",
-                            }}
+                            to={navLink.url}
+                            smooth={true}
                         >
-                            {navLink.name}
-                        </Typography>
+                            <Typography
+                                variant="subtitle1"
+                                fontFamily={"Manrope"}
+                                fontWeight={500}
+                                fontSize={15}
+                                lineHeight={"normal"}
+                                color={"#FFFFFF"}
+                                sx={{
+                                    cursor: "pointer",
+                                }}
+                            >
+                                {navLink.name}
+                            </Typography>
+                        </HashLink>
                     )
                 })}
             </Stack>

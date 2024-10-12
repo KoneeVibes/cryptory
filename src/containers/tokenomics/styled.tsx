@@ -31,6 +31,19 @@ export const TokenomicsWrapper = styled(Box)(({ theme }) => {
                 },
                 padding: "calc(var(--basic-padding) * 2)",
             },
+        },
+        "& .cube-helix-icon": {
+            position: "absolute",
+            bottom: 0,
+            left: 0,
+            transformStyle: "preserve-3d",
+            animation: "spin 5s linear infinite",
+            [theme.breakpoints.between("tablet", "laptop")]: {
+                left: "-9rem",
+            },
+            [theme.breakpoints.down("tablet")]: {
+                display: "none",
+            }
         }
     }
 })

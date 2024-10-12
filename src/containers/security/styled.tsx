@@ -12,17 +12,15 @@ export const SecurityWrapper = styled(Box)(({ theme }) => {
         "& .security-certificates": {
             gap: "calc(var(--flex-gap) * 1)",
             justifyContent: "space-between",
-            marginBlockStart: "var(--basic-margin)",
-            "& svg": {
-                flex: 1,
-                width: "100%",
-                height: "auto",
+            marginBlock: "calc(var(--basic-margin) * 2)",
+            "& .cert-wrapper": {
+                "& svg": {
+                    width: "100%",
+                    height: "auto",
+                }
             },
             [theme.breakpoints.up("miniTablet")]: {
                 gap: "calc(var(--flex-gap) * 2)",
-                "& svg": {
-                    width: "auto",
-                },
             }
         },
         [theme.breakpoints.up("tablet")]: {

@@ -1,7 +1,8 @@
 import { Button, ButtonProps, styled } from "@mui/material";
 import { BaseButtonPropTypes } from "../../types/app.type";
+import { MotionProps } from "framer-motion";
 
-export const BaseButton = styled(Button)<ButtonProps & BaseButtonPropTypes>(({ variant, fontSize, radius, padding, border, background }) => {
+export const BaseButton = styled(Button)<ButtonProps & BaseButtonPropTypes & MotionProps>(({ variant, fontSize, radius, padding, border, background }) => {
     return {
         fontFamily: "Inter",
         fontWeight: 400,

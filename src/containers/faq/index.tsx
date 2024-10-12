@@ -4,6 +4,8 @@ import { FaqWrapper } from "./styled";
 import { qanda } from "../../config";
 import RemoveOutlinedIcon from '@mui/icons-material/RemoveOutlined';
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
+import { motion } from "framer-motion";
+import { container, item } from "../../configs/verticalSlideIn";
 
 export const Faq = () => {
     useEffect(() => {
@@ -35,12 +37,16 @@ export const Faq = () => {
     return (
         <FaqWrapper>
             <Box
-                component={"div"}
+                component={motion.div}
+                variants={container}
+                initial="hidden"
+                whileInView="show"
                 width={{ miniTablet: "70%", tablet: "50%", laptop: "40%" }}
                 className="faq-title"
             >
                 <Typography
-                    variant="h2"
+                    component={motion.h2}
+                    variants={item}
                     fontFamily={"Gilroy"}
                     fontWeight={800}
                     fontSize={{ mobile: 30, tablet: 40, desktop: 50 }}
@@ -73,7 +79,8 @@ export const Faq = () => {
                     </Typography>
                 </Typography>
                 <Typography
-                    variant="body1"
+                    component={motion.p}
+                    variants={item}
                     fontFamily={"Dm Sans"}
                     fontWeight={400}
                     fontSize={{ mobile: 18 }}
@@ -93,8 +100,14 @@ export const Faq = () => {
                     return (
                         <Box
                             key={index}
+                            component={motion.div}
+                            variants={container}
+                            initial="hidden"
+                            whileInView="show"
                         >
                             <Stack
+                                component={motion.div}
+                                variants={item}
                                 direction={{ mobile: "row" }}
                                 className="faq-question-stack"
                             >
@@ -117,7 +130,8 @@ export const Faq = () => {
                                 </IconButton>
                             </Stack>
                             <Box
-                                component={"div"}
+                                component={motion.div}
+                                variants={item}
                                 className="faq-answer-box"
                             >
                                 <Typography

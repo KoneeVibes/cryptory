@@ -2,18 +2,24 @@ import { Box, Card, Typography, useMediaQuery } from "@mui/material";
 import { TeamWrapper } from "./styled";
 import { Carousel } from "react-responsive-carousel";
 import { team } from "../../config";
+import { motion } from "framer-motion";
+import { container, item } from "../../configs/verticalSlideIn";
 
 export const Team = () => {
     const matches = useMediaQuery('(min-width:1024px)');
     return (
         <TeamWrapper>
             <Box
-                component={"div"}
+                component={motion.div}
+                variants={container}
+                initial="hidden"
+                whileInView="show"
                 width={{ miniTablet: "70%", tablet: "50%", laptop: "40%" }}
                 className="team-title"
             >
                 <Typography
-                    variant="h2"
+                    component={motion.h2}
+                    variants={item}
                     fontFamily={"Gilroy"}
                     fontWeight={800}
                     fontSize={{ mobile: 30, tablet: 40, desktop: 50 }}
@@ -33,6 +39,10 @@ export const Team = () => {
             </Box>
             <Box
                 className="carousel-box"
+                component={motion.div}
+                variants={container}
+                initial="hidden"
+                whileInView="show"
             >
                 <Carousel
                     autoPlay={true}

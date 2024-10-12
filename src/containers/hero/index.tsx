@@ -2,12 +2,18 @@ import { Box, Stack, Typography } from "@mui/material";
 import { HeroWrapper } from "./styled";
 import { BaseButton } from "../../components/button/styled";
 import { Pyramid, Star } from "../../assets";
+import { motion } from "framer-motion";
+import { leftChild, leftParent, rightParent } from "../../configs/horizontalSlideIn";
+import { container } from "../../configs/verticalSlideIn";
 
 export const Hero = () => {
     return (
         <HeroWrapper>
             <Box
-                component={"div"}
+                component={motion.div}
+                variants={leftParent}
+                initial={"hidden"}
+                whileInView={"show"}
                 className="subtitle-box"
                 marginLeft={"auto"}
                 marginRight={"auto"}
@@ -15,7 +21,8 @@ export const Hero = () => {
                 width={{ miniTablet: "fit-content" }}
             >
                 <Typography
-                    variant="h3"
+                    component={motion.h3}
+                    variants={leftChild}
                     fontFamily={"Inter"}
                     fontWeight={400}
                     fontSize={15}
@@ -37,6 +44,10 @@ export const Hero = () => {
             </Box>
             <Typography
                 variant="h1"
+                component={motion.div}
+                variants={rightParent}
+                initial={"hidden"}
+                whileInView={"show"}
                 fontFamily={"Gilroy"}
                 fontWeight={800}
                 fontSize={{ mobile: 45, tablet: 55, laptop: 65, desktop: 75, xl: 80 }}
@@ -54,6 +65,10 @@ export const Hero = () => {
             </Typography>
             <Typography
                 variant="body1"
+                component={motion.div}
+                variants={leftParent}
+                initial={"hidden"}
+                whileInView={"show"}
                 fontFamily={"Manrope"}
                 fontWeight={400}
                 fontSize={{ mobile: 16 }}
@@ -73,6 +88,10 @@ export const Hero = () => {
             <Stack
                 className="call-to-action"
                 direction={{ tablet: "row" }}
+                component={motion.div}
+                variants={container}
+                initial="hidden"
+                whileInView="show"
             >
                 <BaseButton
                     variant="contained"
@@ -110,8 +129,8 @@ export const Hero = () => {
                     </Typography>
                 </BaseButton>
             </Stack>
-            <Pyramid className="pyramid-icon"/>
-            <Star className="star-icon"/>
+            <Pyramid className="pyramid-icon" />
+            <Star className="star-icon" />
         </HeroWrapper>
     )
 }

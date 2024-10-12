@@ -3,6 +3,8 @@ import Grid from '@mui/material/Grid2';
 import { pointers } from "../../config";
 import { KeyPointsWrapper } from "./styled";
 import CountUp from 'react-countup';
+import { motion } from "framer-motion";
+import { container, item } from "../../configs/verticalSlideIn";
 
 export const KeyTargets = () => {
     return (
@@ -13,11 +15,17 @@ export const KeyTargets = () => {
             {pointers.map((pointer, index) => {
                 return (
                     <Grid
+                        component={motion.div}
+                        variants={container}
+                        initial="hidden"
+                        whileInView="show"
                         size={{ mobile: 12, tablet: 6, desktop: 3 }}
                         sx={{ overflow: "hidden", height: "auto" }}
                     >
                         <Card
                             key={index}
+                            component={motion.div}
+                            variants={item}
                             className="key-point-card"
                         >
                             <CountUp

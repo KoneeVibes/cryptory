@@ -10,6 +10,7 @@ export const UseCasesWrapper = styled(Box)(({ theme }) => {
         marginBlock: "var(--basic-margin)",
         position: "relative",
         top: openMenu ? "var(--mobile-nav-height)" : "0",
+        overflow: "hidden",
         '& .grid-item': {
             overflow: "hidden",
             height: "auto",
@@ -37,6 +38,16 @@ export const UseCasesWrapper = styled(Box)(({ theme }) => {
             backgroundColor: "transparent",
             boxShadow: "none",
             height: "100%",
+        },
+        "& .helix-icon": {
+            position: "absolute",
+            bottom: 0,
+            right: 0,
+            transformStyle: "preserve-3d",
+            animation: "spin 5s linear infinite",
+            [theme.breakpoints.down("tablet")]: {
+                display: "none",
+            }
         },
         [theme.breakpoints.up("tablet")]: {
             padding: "0 calc(var(--basic-padding) * 2) calc(var(--basic-padding) * 1)",

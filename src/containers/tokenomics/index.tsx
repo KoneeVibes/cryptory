@@ -1,17 +1,26 @@
 import { Box, Divider, Stack, Typography } from "@mui/material";
 import { TokenomicsWrapper } from "./styled";
 import { tokenAllocation, tokenomics, tokenTaxes } from "../../config";
+import { CubeHelix } from "../../assets";
+import { motion } from "framer-motion";
+import { container, item } from "../../configs/verticalSlideIn";
 
 export const Tokenomics = () => {
     return (
-        <TokenomicsWrapper>
+        <TokenomicsWrapper
+            id="tokenomics"
+        >
             <Box
-                component={"div"}
+                component={motion.div}
+                variants={container}
+                initial="hidden"
+                whileInView="show"
                 width={{ miniTablet: "70%", tablet: "50%", laptop: "40%" }}
                 className="tokenomics-title"
             >
                 <Typography
-                    variant="h2"
+                    component={motion.h2}
+                    variants={item}
                     fontFamily={"Gilroy"}
                     fontWeight={800}
                     fontSize={{ mobile: 30, tablet: 40, desktop: 50 }}
@@ -29,7 +38,8 @@ export const Tokenomics = () => {
                     Tokenomics
                 </Typography>
                 <Typography
-                    variant="body1"
+                    component={motion.p}
+                    variants={item}
                     fontFamily={"Dm Sans"}
                     fontWeight={400}
                     fontSize={{ mobile: 18 }}
@@ -43,10 +53,15 @@ export const Tokenomics = () => {
             </Box>
             <Stack
                 direction={{ laptop: "row" }}
+                component={motion.div}
+                variants={container}
+                initial="hidden"
+                whileInView="show"
                 marginBlockStart={{ mobile: "var(--basic-margin)", tablet: 0 }}
             >
                 <Box
-                    component={"div"}
+                    component={motion.div}
+                    variants={item}
                     className="bordered-box"
                     flex={0.5}
                     display={{ mobile: "none", laptop: "block" }}
@@ -55,7 +70,8 @@ export const Tokenomics = () => {
                     return (
                         <Box
                             key={index}
-                            component={"div"}
+                            component={motion.div}
+                            variants={item}
                             className="bordered-box"
                             flex={2}
                         >
@@ -89,7 +105,8 @@ export const Tokenomics = () => {
                     )
                 })}
                 <Box
-                    component={"div"}
+                    component={motion.div}
+                    variants={item}
                     className="bordered-box"
                     flex={0.5}
                     display={{ mobile: "none", laptop: "block" }}
@@ -97,14 +114,20 @@ export const Tokenomics = () => {
             </Stack>
             <Box>
                 <Stack
-                    component={"div"}
                     className="tokenomics-subsection"
+                    component={motion.div}
+                    variants={container}
+                    initial="hidden"
+                    whileInView="show"
                 >
                     <Divider
                         className="underline"
+                        component={motion.div}
+                        variants={item}
                     />
                     <Typography
-                        variant="h2"
+                        component={motion.h2}
+                        variants={item}
                         fontFamily={"Gilroy"}
                         fontWeight={500}
                         fontSize={25}
@@ -117,13 +140,20 @@ export const Tokenomics = () => {
                     </Typography>
                     <Divider
                         className="underline"
+                        component={motion.div}
+                        variants={item}
                     />
                 </Stack>
                 <Stack
                     direction={{ laptop: "row" }}
+                    component={motion.div}
+                    variants={container}
+                    initial="hidden"
+                    whileInView="show"
                 >
                     <Box
-                        component={"div"}
+                        component={motion.div}
+                        variants={item}
                         className="bordered-box"
                         flex={0.35}
                         display={{ mobile: "none", laptop: "block" }}
@@ -132,7 +162,8 @@ export const Tokenomics = () => {
                         return (
                             <Box
                                 key={index}
-                                component={"div"}
+                                component={motion.div}
+                                variants={item}
                                 className="bordered-box"
                                 flex={2.25}
                             >
@@ -166,17 +197,23 @@ export const Tokenomics = () => {
                         )
                     })}
                     <Box
-                        component={"div"}
+                        component={motion.div}
+                        variants={item}
                         className="bordered-box"
                         flex={0.35}
                         display={{ mobile: "none", laptop: "block" }}
                     />
                 </Stack>
                 <Stack
+                    component={motion.div}
+                    variants={container}
+                    initial="hidden"
+                    whileInView="show"
                     direction={{ laptop: "row" }}
                 >
                     <Box
-                        component={"div"}
+                        component={motion.div}
+                        variants={item}
                         className="bordered-box"
                         flex={0.35}
                         display={{ mobile: "none", laptop: "block" }}
@@ -185,7 +222,10 @@ export const Tokenomics = () => {
                         return (
                             <Box
                                 key={index}
-                                component={"div"}
+                                component={motion.div}
+                                variants={container}
+                                initial="hidden"
+                                whileInView="show"
                                 className="bordered-box"
                                 flex={2.25}
                             >
@@ -219,7 +259,8 @@ export const Tokenomics = () => {
                         )
                     })}
                     <Box
-                        component={"div"}
+                        component={motion.div}
+                        variants={item}
                         className="bordered-box"
                         flex={0.35}
                         display={{ mobile: "none", laptop: "block" }}
@@ -227,9 +268,14 @@ export const Tokenomics = () => {
                 </Stack>
                 <Stack
                     direction={{ laptop: "row" }}
+                    component={motion.div}
+                    variants={container}
+                    initial="hidden"
+                    whileInView="show"
                 >
                     <Box
-                        component={"div"}
+                        component={motion.div}
+                        variants={item}
                         className="bordered-box"
                         flex={0.35}
                         display={{ mobile: "none", laptop: "block" }}
@@ -238,7 +284,8 @@ export const Tokenomics = () => {
                         return (
                             <Box
                                 key={index}
-                                component={"div"}
+                                component={motion.div}
+                                variants={item}
                                 className="bordered-box"
                                 flex={2.25}
                             >
@@ -272,7 +319,8 @@ export const Tokenomics = () => {
                         )
                     })}
                     <Box
-                        component={"div"}
+                        component={motion.div}
+                        variants={item}
                         className="bordered-box"
                         flex={0.35}
                         display={{ mobile: "none", laptop: "block" }}
@@ -281,14 +329,20 @@ export const Tokenomics = () => {
             </Box>
             <Box>
                 <Stack
-                    component={"div"}
+                    component={motion.div}
+                    variants={container}
+                    initial="hidden"
+                    whileInView="show"
                     className="tokenomics-subsection"
                 >
                     <Divider
                         className="underline"
+                        component={motion.div}
+                        variants={item}
                     />
                     <Typography
-                        variant="h2"
+                        component={motion.h2}
+                        variants={item}
                         fontFamily={"Gilroy"}
                         fontWeight={500}
                         fontSize={25}
@@ -301,13 +355,20 @@ export const Tokenomics = () => {
                     </Typography>
                     <Divider
                         className="underline"
+                        component={motion.div}
+                        variants={item}
                     />
                 </Stack>
                 <Stack
                     direction={{ laptop: "row" }}
+                    component={motion.div}
+                    variants={container}
+                    initial="hidden"
+                    whileInView="show"
                 >
                     <Box
-                        component={"div"}
+                        component={motion.div}
+                        variants={item}
                         className="bordered-box"
                         flex={0.35}
                         display={{ mobile: "none", laptop: "block" }}
@@ -316,7 +377,8 @@ export const Tokenomics = () => {
                         return (
                             <Box
                                 key={index}
-                                component={"div"}
+                                component={motion.div}
+                                variants={item}
                                 className="bordered-box"
                                 flex={2.25}
                             >
@@ -350,7 +412,8 @@ export const Tokenomics = () => {
                         )
                     })}
                     <Box
-                        component={"div"}
+                        component={motion.div}
+                        variants={item}
                         className="bordered-box"
                         flex={0.35}
                         display={{ mobile: "none", laptop: "block" }}
@@ -358,9 +421,14 @@ export const Tokenomics = () => {
                 </Stack>
                 <Stack
                     direction={{ laptop: "row" }}
+                    component={motion.div}
+                    variants={container}
+                    initial="hidden"
+                    whileInView="show"
                 >
                     <Box
-                        component={"div"}
+                        component={motion.div}
+                        variants={item}
                         className="bordered-box"
                         flex={0.35}
                         display={{ mobile: "none", laptop: "block" }}
@@ -369,7 +437,8 @@ export const Tokenomics = () => {
                         return (
                             <Box
                                 key={index}
-                                component={"div"}
+                                component={motion.div}
+                                variants={item}
                                 className="bordered-box"
                                 flex={2.25}
                             >
@@ -403,13 +472,15 @@ export const Tokenomics = () => {
                         )
                     })}
                     <Box
-                        component={"div"}
+                        component={motion.div}
+                        variants={item}
                         className="bordered-box"
                         flex={0.35}
                         display={{ mobile: "none", laptop: "block" }}
                     />
                 </Stack>
             </Box>
+            <CubeHelix className="cube-helix-icon" />
         </TokenomicsWrapper>
     )
 }
