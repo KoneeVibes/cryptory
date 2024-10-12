@@ -245,28 +245,28 @@ export const team = [
 
 export const qanda = [
     {
-        question: "What can website AI do?",
-        answer: "Website AI is a cutting-edge tool that assists in generating website content, designs, and layouts using artificial intelligence. It streamlines the website creation process, making it efficient and user-friendly."
+        question: "What can Cryptory do?",
+        answer: "Cryptory is a cutting-edge tool that assists in generating website content, designs, and layouts using artificial intelligence. It streamlines the website creation process, making it efficient and user-friendly."
     },
     {
         question: "How do I access Cryptory?",
-        answer: "Website AI is a cutting-edge tool that assists in generating website content, designs, and layouts using artificial intelligence. It streamlines the website creation process, making it efficient and user-friendly."
+        answer: "Cryptory is a cutting-edge tool that assists in generating website content, designs, and layouts using artificial intelligence. It streamlines the website creation process, making it efficient and user-friendly."
     },
     {
         question: "Is Cryptoryfree to use?",
-        answer: "Website AI is a cutting-edge tool that assists in generating website content, designs, and layouts using artificial intelligence. It streamlines the website creation process, making it efficient and user-friendly."
+        answer: "Cryptory is a cutting-edge tool that assists in generating website content, designs, and layouts using artificial intelligence. It streamlines the website creation process, making it efficient and user-friendly."
     },
     {
-        question: "How does the AI generate content?",
-        answer: "Website AI is a cutting-edge tool that assists in generating website content, designs, and layouts using artificial intelligence. It streamlines the website creation process, making it efficient and user-friendly."
+        question: "How does Cryptory generate content?",
+        answer: "Cryptory is a cutting-edge tool that assists in generating website content, designs, and layouts using artificial intelligence. It streamlines the website creation process, making it efficient and user-friendly."
     },
     {
-        question: "Can I customize the AI-generated content?",
-        answer: "Website AI is a cutting-edge tool that assists in generating website content, designs, and layouts using artificial intelligence. It streamlines the website creation process, making it efficient and user-friendly."
+        question: "Can I customize the cryptory-generated content?",
+        answer: "Cryptory is a cutting-edge tool that assists in generating website content, designs, and layouts using artificial intelligence. It streamlines the website creation process, making it efficient and user-friendly."
     },
     {
         question: "Is my data safe with cryptory?",
-        answer: "Website AI is a cutting-edge tool that assists in generating website content, designs, and layouts using artificial intelligence. It streamlines the website creation process, making it efficient and user-friendly."
+        answer: "Cryptory is a cutting-edge tool that assists in generating website content, designs, and layouts using artificial intelligence. It streamlines the website creation process, making it efficient and user-friendly."
     },
 ];
 

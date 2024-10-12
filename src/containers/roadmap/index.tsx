@@ -88,6 +88,9 @@ export const Roadmap = () => {
                                     whiteSpace={"normal"}
                                     color="rgba(48, 108, 254, 0.96)"
                                     textAlign={"left"}
+                                    sx={{
+                                        userSelect: "none"
+                                    }}
                                 >
                                     {milestone.subtitle}
                                 </Typography>
@@ -101,6 +104,9 @@ export const Roadmap = () => {
                                     color="#FFFFFF"
                                     textAlign={"left"}
                                     marginBlock={"1rem"}
+                                    sx={{
+                                        userSelect: "none"
+                                    }}
                                 >
                                     {milestone.title}
                                 </Typography>
@@ -113,6 +119,9 @@ export const Roadmap = () => {
                                     color="#FFFFFF"
                                     lineHeight={1.6}
                                     textAlign={"left"}
+                                    sx={{
+                                        userSelect: "none"
+                                    }}
                                 >
                                     {milestone.body}
                                 </Typography>

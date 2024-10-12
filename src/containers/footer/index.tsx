@@ -42,6 +42,7 @@ export const Footer = () => {
                     </Typography>
                     <BaseButton
                         variant="contained"
+                        background="#2D37A4"
                         startIcon={<Telegram sx={{ background: "#24A1DE", borderRadius: "50%", padding: "0.5rem" }} />}
                         sx={{
                             width: matches ? "100%" : "auto"

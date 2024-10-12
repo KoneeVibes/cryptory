@@ -74,6 +74,9 @@ export const Team = () => {
                                     color="#FFFFFF"
                                     textAlign={"left"}
                                     marginBlock={"1rem"}
+                                    sx={{
+                                        userSelect: "none"
+                                    }}
                                 >
                                     {member.title}
                                 </Typography>
@@ -87,6 +90,9 @@ export const Team = () => {
                                     color="#FFFFFF"
                                     textAlign={"left"}
                                     marginBlock={"1rem"}
+                                    sx={{
+                                        userSelect: "none"
+                                    }}
                                 >
                                     {member.body}
                                 </Typography>
