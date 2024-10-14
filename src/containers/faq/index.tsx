@@ -35,7 +35,9 @@ export const Faq = () => {
         });
     }, []);
     return (
-        <FaqWrapper>
+        <FaqWrapper
+            id="faq"
+        >
             <Box
                 component={motion.div}
                 variants={container}

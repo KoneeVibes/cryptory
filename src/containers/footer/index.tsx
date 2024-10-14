@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { container, item } from "../../configs/verticalSlideIn";
 import { BaseButton } from "../../components/button/styled";
 import { Telegram } from "@mui/icons-material";
+import { HashLink } from "react-router-hash-link";
 
 export const Footer = () => {
     const matches = useMediaQuery('(max-width:280px)');
@@ -47,6 +48,7 @@ export const Footer = () => {
                         sx={{
                             width: matches ? "100%" : "auto"
                         }}
+                        onClick={() => window.open(socialMediaIcons[0].url, '_blank')}
                     >
                         <Typography
                             variant="button"
@@ -145,24 +147,30 @@ export const Footer = () => {
                     >
                         {footerLinks.support.map((support, index) => {
                             return (
-                                <Typography
+                                <HashLink
                                     key={index}
-                                    component={motion.div}
-                                    variants={item}
-                                    variant="body1"
-                                    fontFamily={"Dm Sans"}
-                                    fontWeight={400}
-                                    fontSize={{ mobile: 18 }}
-                                    lineHeight={"normal"}
-                                    marginBlock={"calc(var(--basic-margin) / 4)"}
-                                    whiteSpace={"normal"}
-                                    color="#FFFFFF60"
-                                    sx={{
-                                        cursor: "pointer",
-                                    }}
+                                    to={support.url}
+                                    smooth={true}
+                                    target={index === 0 ? "_blank" : "_self"}
                                 >
-                                    {support.name}
-                                </Typography>
+                                    <Typography
+                                        component={motion.div}
+                                        variants={item}
+                                        variant="body1"
+                                        fontFamily={"Dm Sans"}
+                                        fontWeight={400}
+                                        fontSize={{ mobile: 18 }}
+                                        lineHeight={"normal"}
+                                        marginBlock={"calc(var(--basic-margin) / 4)"}
+                                        whiteSpace={"normal"}
+                                        color="#FFFFFF60"
+                                        sx={{
+                                            cursor: "pointer",
+                                        }}
+                                    >
+                                        {support.name}
+                                    </Typography>
+                                </HashLink>
                             )
                         })}
                     </Stack>

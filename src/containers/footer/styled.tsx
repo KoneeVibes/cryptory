@@ -8,6 +8,9 @@ export const FooterWrapper = styled(Box)(({ theme }) => {
         position: "relative",
         top: openMenu ? "var(--mobile-nav-height)" : "0",
         padding: "0 calc(var(--basic-padding) * 1)",
+        "& a": {
+            textDecoration: "none",
+        },
         "& .top-layer": {
             gap: "calc(var(--flex-gap) * 2)",
             paddingBottom: "var(--basic-padding)",

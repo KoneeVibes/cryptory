@@ -65,7 +65,7 @@ export const pointers = [
     },
     {
         title: "utilities listed out of 10000+ available",
-        count: 100
+        count: 10000
     },
     {
         title: "Web3 users target",
@@ -239,7 +239,7 @@ export const team = [
     {
         icon: <Ser />,
         title: "Ser PT",
-        body: "The driving force behind XCEPTION, a leader who epitomizes intelligence and forward thinking. As the helm of our dynamic company, he is not just a CEO; he’s a strategic architect with a colossal vision for the future."
+        body: "The driving force behind Cryptory, a leader who epitomizes intelligence and forward thinking. As the helm of our dynamic company, he is not just a CEO; he’s a strategic architect with a colossal vision for the future."
     },
 ];
 
@@ -292,7 +292,7 @@ export const footerLinks = {
     support: [
         {
             name: "GitBook",
-            url: "/#",
+            url: "https://cryptory.gitbook.io/cryptory",
         },
         {
             name: "Bot",
@@ -300,7 +300,7 @@ export const footerLinks = {
         },
         {
             name: "FAQs",
-            url: "/#",
+            url: "/#faq",
         },
     ],
 };
@@ -308,18 +308,18 @@ export const footerLinks = {
 export const socialMediaIcons = [
     {
         icon: <Telegram />,
-        url: "/#"
+        url: "https://t.me/+gSo9Iizb3KM2OWNk"
     },
     {
         icon: <Twitter />,
-        url: "/#"
+        url: "https://x.com/CRYPTORY_TECH?t=87uRdGKek8mDGyc8yIOBlg&s=09"
     },
     {
         icon: <GitHub />,
-        url: "/#"
+        url: "/"
     },
     {
         icon: <YouTube />,
-        url: "/#"
+        url: "/"
     },
 ]
