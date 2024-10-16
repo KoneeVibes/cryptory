@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Box, IconButton, Stack, Typography } from "@mui/material";
 import { FaqWrapper } from "./styled";
-import { qanda } from "../../config";
+import { qanda } from "../../configs/data";
 import RemoveOutlinedIcon from '@mui/icons-material/RemoveOutlined';
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import { motion } from "framer-motion";

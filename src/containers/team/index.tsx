@@ -1,7 +1,7 @@
 import { Box, Card, Typography, useMediaQuery } from "@mui/material";
 import { TeamWrapper } from "./styled";
 import { Carousel } from "react-responsive-carousel";
-import { team } from "../../config";
+import { team } from "../../configs/data";
 import { motion } from "framer-motion";
 import { container, item } from "../../configs/verticalSlideIn";
 

@@ -1,6 +1,6 @@
 import { Box, Divider, Stack, Typography } from "@mui/material";
 import { TokenomicsWrapper } from "./styled";
-import { tokenAllocation, tokenomics, tokenTaxes } from "../../config";
+import { tokenAllocation, tokenomics, tokenTaxes } from "../../configs/data";
 import { CubeHelix } from "../../assets";
 import { motion } from "framer-motion";
 import { container, item } from "../../configs/verticalSlideIn";

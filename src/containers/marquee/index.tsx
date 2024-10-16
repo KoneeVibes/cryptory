@@ -1,5 +1,5 @@
 import { MarqueeWrapper } from "./styled";
-import { brands } from "../../config";
+import { brands } from "../../configs/data";
 import { Fragment } from "react/jsx-runtime";
 import Marquee from "react-fast-marquee";
 

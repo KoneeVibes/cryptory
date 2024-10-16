@@ -1,7 +1,7 @@
 import { Box, IconButton, Stack, Typography, useMediaQuery } from "@mui/material";
 import { FooterWrapper } from "./styled";
 import { Favicon } from "../../assets";
-import { footerLinks, socialMediaIcons } from "../../config";
+import { footerLinks, socialMediaIcons } from "../../configs/data";
 import { motion } from "framer-motion";
 import { container, item } from "../../configs/verticalSlideIn";
 import { BaseButton } from "../../components/button/styled";
@@ -39,7 +39,7 @@ export const Footer = () => {
                         whiteSpace={"normal"}
                         color="#FFFFFF60"
                     >
-                        Cryptory is the first Multi Industry AI Website Builder powered entirely through Telegram.
+                        First Web3 Utilities Tracker, Aggregator and  marketplace, built on WhatsApp, Telegram, Discord and App with advanced AI toolkits. Securely Navigate the whole web3 innovations from one App.
                     </Typography>
                     <BaseButton
                         variant="contained"

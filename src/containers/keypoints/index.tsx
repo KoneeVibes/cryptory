@@ -1,6 +1,6 @@
 import { Card, Typography } from "@mui/material";
 import Grid from '@mui/material/Grid2';
-import { pointers } from "../../config";
+import { pointers } from "../../configs/data";
 import { KeyPointsWrapper } from "./styled";
 import CountUp from 'react-countup';
 import { motion } from "framer-motion";

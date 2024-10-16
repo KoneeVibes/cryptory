@@ -1,6 +1,6 @@
 import { Box, Card, Typography, useMediaQuery } from "@mui/material";
 import { RoadmapWrapper } from "./styled";
-import { roadmap } from "../../config";
+import { roadmap } from "../../configs/data";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { motion } from "framer-motion";

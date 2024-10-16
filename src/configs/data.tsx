@@ -1,11 +1,11 @@
-import { Advertising, Content, Contest, Dannyo, Kols, Partnerships, Punkbrand, Raribrand, Referral, Rio, Sandboxbrand, Ser, Topshotbrand, Veefriendbrand, Zedbrand } from "./assets";
-import utilitiestracking from "./assets/utilitytracking.svg";
-import utilitiespremium from "./assets/utilitiespremium.svg";
-import aiception from "./assets/ception.svg";
-import crosschain from "./assets/crosschain.svg";
-import cryptorypad from "./assets/cryptorypad.svg";
-import cryptorydapp from "./assets/cryptorydapp.svg";
-import cryptoryweb from "./assets/cryptoryweb.svg";
+import { Advertising, Content, Contest, Dannyo, Kols, Partnerships, Punkbrand, Raribrand, Referral, Rio, Sandboxbrand, Ser, Topshotbrand, Veefriendbrand, Zedbrand } from "../assets";
+import utilitiestracking from "../assets/utilitytracking.svg";
+import utilitiespremium from "../assets/utilitiespremium.svg";
+import aiception from "../assets/ception.svg";
+import crosschain from "../assets/crosschain.svg";
+import cryptorypad from "../assets/cryptorypad.svg";
+import cryptorydapp from "../assets/cryptorydapp.svg";
+import cryptoryweb from "../assets/cryptoryweb.svg";
 import { GitHub, Telegram, Twitter, YouTube } from "@mui/icons-material";
 
 export const navLinks = [
@@ -109,8 +109,8 @@ export const mainusecases = [
         thumbnail: utilitiespremium,
     },
     {
-        title: "Cryptory Web Apps",
-        body: "Access all the Web3 Utilities from the web page.",
+        title: "Marketory",
+        body: "Cryptory gives real market analytics that helps users stay abreasted with trends and stay profitable",
         thumbnail: cryptoryweb
     },
 ];
@@ -228,7 +228,7 @@ export const roadmap = [
 export const team = [
     {
         icon: <Dannyo />,
-        title: "Dannyo",
+        title: "Papa Piper",
         body: "Dedicated community and social media manager, adept at fostering online connections and growing vibrant communities for the last 8 years."
     },
     {
@@ -238,7 +238,7 @@ export const team = [
     },
     {
         icon: <Ser />,
-        title: "Ser PT",
+        title: "Alphah",
         body: "The driving force behind Cryptory, a leader who epitomizes intelligence and forward thinking. As the helm of our dynamic company, he is not just a CEO; he’s a strategic architect with a colossal vision for the future."
     },
 ];

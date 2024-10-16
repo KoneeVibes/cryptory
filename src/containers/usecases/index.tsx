@@ -1,5 +1,5 @@
 import { Box, Card, CardContent, CardMedia, Grid2, Typography } from "@mui/material";
-import { mainusecases } from "../../config";
+import { mainusecases } from "../../configs/data";
 import { UseCasesWrapper } from "./styled";
 import { Helix } from "../../assets";
 import { motion } from "framer-motion";

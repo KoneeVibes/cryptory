@@ -2,7 +2,7 @@ import { HashLink } from "react-router-hash-link";
 import { Box, Stack, Typography } from "@mui/material";
 import { NavigationWrapper } from "./styled";
 import { Favicon } from "../../assets";
-import { navLinks } from "../../config";
+import { navLinks } from "../../configs/data";
 import { BaseButton } from "../button/styled";
 import { MenuButton } from "../button/menu";
 import { useNavigate } from "react-router-dom";
